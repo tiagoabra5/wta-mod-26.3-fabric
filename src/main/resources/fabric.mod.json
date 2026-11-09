@@ -2,15 +2,11 @@
 	"schemaVersion": 1,
 	"id": "wta-mod",
 	"version": "${version}",
-	"name": "wta-mod",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"name": "WTA — Where They Are",
+	"description": "Shows each player's dimension beside their head in the TAB player list.",
 	"authors": [
-		"Me!"
+		"Tiago"
 	],
-	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
-	},
 	"license": "CC0-1.0",
 	"icon": "assets/wta-mod/icon.png",
 	"environment": "*",
@@ -23,7 +19,6 @@
 		]
 	},
 	"mixins": [
-		"wta-mod.mixins.json",
 		{
 			"config": "wta-mod.client.mixins.json",
 			"environment": "client"
