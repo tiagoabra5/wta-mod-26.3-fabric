@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "id": "wta-mod-test",
+  "version": "1.0.0",
+  "name": "WTA integration tests",
+  "environment": "client",
+  "entrypoints": {
+    "fabric-client-gametest": ["com.tiago.test.DimensionSyncGameTest"]
+  }
+}
