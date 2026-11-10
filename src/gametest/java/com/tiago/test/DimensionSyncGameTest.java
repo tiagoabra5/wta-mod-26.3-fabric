@@ -18,6 +18,7 @@ import java.util.UUID;
 public class DimensionSyncGameTest implements FabricClientGameTest {
 	@Override
 	public void runTest(ClientGameTestContext context) {
+		PeerSessionChecks.run();
 		try (TestSingleplayerContext world = context.worldBuilder().create()) {
 			context.waitFor(client -> client.player != null && PlayerDimensions.isAvailable());
 			waitForDimension(context, "minecraft:overworld");

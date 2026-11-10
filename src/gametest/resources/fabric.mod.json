@@ -4,7 +4,8 @@
   "version": "1.0.0",
   "name": "WTA integration tests",
   "environment": "client",
+  "mixins": ["wta-test.mixins.json"],
   "entrypoints": {
-    "fabric-client-gametest": ["com.tiago.test.DimensionSyncGameTest"]
+    "fabric-client-gametest": ["com.tiago.test.DimensionSyncGameTest", "com.tiago.test.PeerSharingGameTest"]
   }
 }
