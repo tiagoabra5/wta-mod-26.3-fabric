@@ -30,9 +30,21 @@ O ícone é atualizado automaticamente conforme as informações de dimensão mu
 
 **Instale no seu cliente e jogue.** O WTA mostra sua dimensão e a dos jogadores próximos que seu jogo está acompanhando. Quando a dimensão de alguém não está disponível, ele exibe **`?`**.
 
+**Compartilhamento entre clientes, a partir da versão 1.1.0:** jogadores com a nova versão podem trocar suas dimensões mesmo estando em mundos diferentes. Não precisa de OP, mapa online ou instalação no servidor. A descoberta usa um pequeno anúncio no chat público; as atualizações de dimensão usam mensagens privadas. O WTA oculta essas mensagens de protocolo nos clientes participantes, mas o servidor pode registrá-las.
+
+> Os dois jogadores precisam do WTA 1.1.0 ou superior com o compartilhamento ativado. O servidor deve permitir chat comum entre jogadores e `/msg` (ou `/tell`/`/w`). Plugins que substituem as mensagens de jogadores por mensagens de sistema sem remetente não são suportados por esse transporte. Quem não usa WTA ainda pode ser identificado quando estiver no alcance local, ou pelo componente opcional do servidor.
+
 A instalação no servidor é **opcional**. Com o WTA também no servidor, o mod recebe as dimensões de todos os jogadores, inclusive em outras dimensões ou fora da sua distância de visão.
 
 > O WTA compartilha apenas a dimensão. As coordenadas dos jogadores não são transmitidas.
+
+### Controles do compartilhamento
+
+- `/wta status` — mostra o estado do compartilhamento e quantos participantes foram encontrados.
+- `/wta sync` — procura participantes novamente.
+- `/wta sharing on` / `/wta sharing off` — ativa ou desativa o compartilhamento; a preferência é salva entre sessões.
+
+O compartilhamento vem ativado. A descoberta normalmente leva alguns segundos. Os dados expiram quando um participante para de responder e são limpos ao sair do servidor. As atualizações têm limite de frequência para evitar excesso de comandos de chat.
 
 ## Ícones de dimensão
 
@@ -44,4 +56,8 @@ A instalação no servidor é **opcional**. Com o WTA também no servidor, o mod
 | Outras dimensões | Pérola do End |
 | Desconhecida | `?` |
 
+## Download
+
 [⬇ Baixar WTA](https://github.com/tiagoabra5/wta-mod-26.3-fabric/releases/latest)
+
+Requer **Fabric API** para Minecraft 26.3.
