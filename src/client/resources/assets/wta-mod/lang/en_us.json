@@ -1,0 +1,6 @@
+{
+  "wta.status": "WTA: sharing=%s | peers=%s | server sync=%s",
+  "wta.searching": "WTA: searching for peers through chat (up to 15 seconds).",
+  "wta.enabled": "WTA: dimension sharing enabled. Discovery uses public chat; updates use private messages.",
+  "wta.disabled": "WTA: dimension sharing disabled."
+}

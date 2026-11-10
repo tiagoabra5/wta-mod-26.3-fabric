@@ -1,0 +1,6 @@
+{
+  "wta.status": "WTA: compartilhamento=%s | participantes=%s | sincronização do servidor=%s",
+  "wta.searching": "WTA: procurando participantes pelo chat (até 15 segundos).",
+  "wta.enabled": "WTA: compartilhamento de dimensões ativado. A descoberta usa o chat público; as atualizações usam mensagens privadas.",
+  "wta.disabled": "WTA: compartilhamento de dimensões desativado."
+}

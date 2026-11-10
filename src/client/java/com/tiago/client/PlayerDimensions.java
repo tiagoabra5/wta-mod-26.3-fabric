@@ -30,7 +30,8 @@ public final class PlayerDimensions {
 				return client.level.dimension().identifier();
 			}
 		}
-		return DIMENSIONS.get(playerId);
+		Identifier serverDimension = DIMENSIONS.get(playerId);
+		return serverDimension != null ? serverDimension : com.tiago.client.peer.PeerSharing.get(playerId);
 	}
 
 	public static boolean isAvailable() {
